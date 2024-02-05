@@ -1,0 +1,38 @@
+@startuml
+left to right direction
+
+actor pip
+
+rectangle "Add New Good to Stock" {
+  pip --> (Add New Good to Stock)
+}
+
+rectangle "Delete Good from Stock" {
+  pip --> (Delete Good from Stock)
+}
+
+rectangle "Get Good from stok" {
+  pip --> (Get Good from stok)
+}
+
+rectangle "Add Good to tradeRoom" {
+  pip --> (Add Good to tradeRoom)
+}
+
+rectangle "Delete Good to tradeRoom" {
+  pip --> (Delete Good to tradeRoom)
+}
+
+rectangle "Take Good location in tradeRoom" {
+  pip --> (Take Good location in tradeRoom)
+}
+
+rectangle "set Good location in tradeRoom" {
+  pip --> (set Good location in tradeRoom)
+}
+
+rectangle "get Good from tradeRoom" {
+  pip --> (get Good from tradeRoom)
+}
+
+@enduml

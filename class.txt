@@ -1,0 +1,42 @@
+@startuml
+class Mag {
+    + name : string
+}
+
+class Good {
+    + name : string
+    + count : int
+    + price : float
+}
+
+class stock {
+    + goods : List<good>
+    + addGood(goods : good)
+    + deleteGood(goods : good)
+    + getGood() : List<string>
+}
+
+class tradeRoom {
+    + name : string
+    + goods : List<string>
+    + location : string
+    + addGood(goods : good)
+    + deleteGood(goods : good)
+    + getGood() : List<Товар>
+    + setLocation(location : string)
+}
+
+class Cas {
+    + sum : float
+    + salesRegistration(goods : good)
+    + tekeStonks() : float
+}
+
+Mag -- stock
+Mag -- tradeRoom
+Mag -- Cas
+
+Good --* stock
+Good --* tradeRoom
+Good -- Cas
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+state Stock {
+}
+ 
+state TradeRoom{
+}
+
+state Cas{
+}
+
+[*] --> Stock : Товар попал на склад
+Stock --> TradeRoom : Товар попал в магазин
+TradeRoom --> Cas : Товар на кассе
+Cas --> [*] : Товар продан
+@enduml
